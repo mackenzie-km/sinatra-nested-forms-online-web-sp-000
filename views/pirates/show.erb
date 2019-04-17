@@ -1,8 +1,6 @@
 <h1>Display your Pirate here</h1>
 <%=Pirate.all.collect do |element|
-  "Name: #{element.name\n}"
-  "Weight: #{element.weight\n}"
-  "Height: #{element.height\n}"
+  element.name
   end %>
 
 <h2>Display your first ship here</h2>

@@ -4,7 +4,7 @@
 end.first %>
 
 <h2>Display your first ship here</h2>
-<%=Ship.all[0].collect do |element|
+<%=Pirate.all.first.ships.collect do |element|
   " Ship Name: #{element.name}" + " Ship Height: #{element.height}" + " Ship Weight: #{element.weight}"
   end.first %>
 

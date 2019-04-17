@@ -1,5 +1,5 @@
 <h1><%="<p>Pirate Name: #{Pirate.all.last.name}<br>" + "Pirate Height: #{Pirate.all.last.height}<br>" + "Pirate Weight: #{Pirate.all.last.weight}<br></p>" %></h1>
 
-<h2><%="<p>Ship Name: #{Ship.all[0].name}<br>" + "Ship Height: #{Ship.all[0].booty}<br>" + "Ship Weight: #{Ship.all[0].type}<br></p>" %></h2>
+<h2><%="<p>Ship Name: #{Ship.all[-1].name}<br>" + "Ship Height: #{Ship.all[-1].booty}<br>" + "Ship Weight: #{Ship.all[-1].type}<br></p>" %></h2>
 
-<h2><%="<p>Ship Name: #{Ship.all[1].name}<br>" + "Ship Height: #{Ship.all[1].booty}<br>" + "Ship Weight: #{Ship.all[1].type}<br></p>" %></h2>
+<h2><%="<p>Ship Name: #{Ship.all.last.name}<br>" + "Ship Height: #{Ship.all.last.booty}<br>" + "Ship Weight: #{Ship.all.last.type}<br></p>" %></h2>

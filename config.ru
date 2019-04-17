@@ -1,2 +1,3 @@
-require './app'
+
+require '././app'
 run FormsLab::App

@@ -23,6 +23,7 @@ module FormsLab
       params[:pirate][:ships].collect do |ship|
         Ship.new(ship[:name], ship[:type], ship[:booty])
       end
+      binding.pry
       erb :show
     end
   end

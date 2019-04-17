@@ -1,5 +1,5 @@
 <h1><%=Pirate.all.collect do |element|
-  " Pirate Name: #{element.name}" + " Pirate Height: #{element.height}" + " Pirate Weight: #{element.weight}"
+  " Pirate Name: #{element.name}<br>" + " Pirate Height: #{element.height}" + " Pirate Weight: #{element.weight}"
 end.first %></h1>
 
 <h2><%=" Ship Name: #{Ship.all[0].name}" + " Ship Height: #{Ship.all[0].booty}" + " Ship Weight: #{Ship.all[0].type}" %></h2>

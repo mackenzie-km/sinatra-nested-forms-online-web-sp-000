@@ -1,10 +1,7 @@
-<h1>Display your Pirate here</h1>
-<%=Pirate.all.collect do |element|
+<h1><%=Pirate.all.collect do |element|
   " Pirate Name: #{element.name}" + " Pirate Height: #{element.height}" + " Pirate Weight: #{element.weight}"
-end.first %>
+end.first %></h1>
 
-<h2>Display your first ship here</h2>
-<%=" Ship Name: #{Ship.all[0].name}" + " Ship Height: #{Ship.all[0].booty}" + " Ship Weight: #{Ship.all[0].type}" %>
+<h2><%=" Ship Name: #{Ship.all[0].name}" + " Ship Height: #{Ship.all[0].booty}" + " Ship Weight: #{Ship.all[0].type}" %></h2>
 
-<h2>Display your second ship here</h2>
-<%=" Ship Name: #{Ship.all[1].name}" + " Ship Height: #{Ship.all[1].booty}" + " Ship Weight: #{Ship.all[1].type}" %>
+<h2><%=" Ship Name: #{Ship.all[1].name}" + " Ship Height: #{Ship.all[1].booty}" + " Ship Weight: #{Ship.all[1].type}" %></h2>

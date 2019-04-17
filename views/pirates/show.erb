@@ -4,7 +4,9 @@
 end.first %>
 
 <h2>Display your first ship here</h2>
-<%=Ship.all.first.name%>
+<%=Ship.all[0].collect do |element|
+  " Ship Name: #{element.name}" + " Ship Height: #{element.height}" + " Ship Weight: #{element.weight}"
+  end.first %>
 
 <h2>Display your second ship here</h2>
 <%=Ship.all[0].name%>

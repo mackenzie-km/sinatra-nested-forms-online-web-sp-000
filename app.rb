@@ -23,7 +23,6 @@ module FormsLab
       params[:pirate][:ships].collect do |ship|
         Ship.new(ship[:name], ship[:type], ship[:booty])
       end
-      set :views, settings.root + '/views/pirates'
       erb :show
     end
   end
